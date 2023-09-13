@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block title%} - ISSC {% endblock %}</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = '/css/styles.css')}}">
+</head>
+<body>
+    <ul>
+        <li><a href="{{url_for('index')}}">Inicio</a></li>
+        <li><a href="{{url_for('proyectos')}}">Proyectos</a></li>
+        <li><a href="{{url_for('contacto')}}">Contacto</a></li>
+        <li><a href="{{url_for('plantilla')}}">Plantilla</a></li>
+        <li><a href="{{url_for('general')}}">General</a></li>
+    </ul>
+    <hr/>
+
+    <section id="content">
+        {% block content %}
+
+        {% endblock %}
+    </section>
+
+    <footer>
+        Ingeniería de Software y Sistemas Computacionales - La Salle Bajío ({{ date.year }})
+    </footer>
+</body>
+</html>

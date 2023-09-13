@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+General
+{{ super() }}
+{% endblock %}
+
+{% block content %}
+
+    <div style="text-align: center;">
+        <h1>Bienvenido a la formula general</h1>
+        <img src="https://economipedia.com/wp-content/uploads/formula-general.png" alt="Formula general">
+    </div>
+    <p>Una fórmula general, en la definición más amplia del término, es aquella que, en el ámbito de las matemáticas, permite obtener el valor de una incógnita en distintos casos particulares.
+
+        Es decir, una fórmula general es una expresión que puede aplicarse para calcular el valor de una variable a partir de determinados datos.
+        
+        Usualmente, con fórmula general se hace referencia a aquella que permite resolver ecuaciones cuadráticas, es decir, ecuaciones de segundo grado. Estas son aquellas donde el máximo exponente al que está elevada la incógnita es 2 y que tiene la siguiente forma:
+        
+        ax2+bx+c=0</p>
+    <p>a = {{a}}</p>
+    <p>b = {{b}}</p>
+    <p>c = {{c}}</p>
+    <p>{{aviso}}</p>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Error
+    {{ super() }}
+{% endblock %}
+
+{% block content %}
+
+<div class="container my-5 fade-in">
+  <img src="https://cdn.pixabay.com/photo/2017/03/09/12/31/error-2129569_1280.jpg" alt="Error 404" class="img-fluid mb-4">
+  <h1 class="mb-4">Error 404</h1>
+  <p>La página que estás buscando no fue encontrada.</p>
+  <a href="/" class="btn btn-primary mt-3">Regresar al inicio</a>
+</div>
+
+{% endblock %}

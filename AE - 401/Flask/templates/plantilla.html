@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Plantilla
+{{ super() }}
+{% endblock %}
+
+{% block content %}
+
+<h1>Tu tienes: {{edad}} años</h1>
+
+{% if edad >= 18 %}
+<h1>Eres mayor de edad</h1>
+
+<h2>Contenido multimedia:</h2>
+
+<ul>
+{% for adulto in adultos %}
+<li>Pelicula {{adulto}}</li>
+{% endfor %}
+</ul>
+
+{% else %}
+<h1>Eres menor de edad</h1>
+
+<h2>Contenido multimedia:</h2>
+
+<ul>
+{% for nino in ninos %}
+<li>Pelicula {{nino}}</li>
+{% endfor %}
+</ul>
+{% endif %}
+
+{% endblock %}

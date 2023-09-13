@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Extra
+    {{ super() }}
+{% endblock %}
+
+{% block content %}
+
+<div class="container my-5">
+    <h1 class="mb-4">Lenguajes populares</h1>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre del Lenguaje</th>
+                <th scope="col">Utilidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for lenguaje in lenguajes %}
+            <tr>
+                <th scope="row">{{ lenguaje.id }}</th>
+                <td>{{ lenguaje.nombre }}</td>
+                <td>{{ lenguaje.utilidad }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}
