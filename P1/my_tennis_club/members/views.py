@@ -26,7 +26,7 @@ def main(request):
 
 def testing(request):
     #mydata = Member.objects.all()
-    #mydata = Member.objects.all().values() # Método values
+    mydata = Member.objects.all().values() # Método values
     #mydata = Member.objects.values_list('firstname') # Método values_list, devuelve columnas específicas
     #mydata = Member.objects.filter(firstname='Angel').values() # Método filter, devuelve filas específicas
     #mydata = Member.objects.filter(firstname='Angel').values() # Devuelve solo las filas que coinciden con el término de búsqueda
@@ -36,8 +36,7 @@ def testing(request):
     #mydata = Member.objects.filter(firstname__startswith='A').values() # Se pueden usar comodines para buscar coincidencias
     #mydata = Member.objects.all().order_by('firstname').values() # Se pueden ordenar los resultados con el método order_by
     #mydata = Member.objects.all().order_by('-firstname').values() # Se pueden ordenar los resultados con el método order_by, el signo - invierte el orden
-    mydata = Member.objects.all().order_by('lastname', '-id').values() # Para ordenar por más de un campo, separe los nombres de los campos con una coma en el método order_by
-
+    #mydata = Member.objects.all().order_by('lastname', '-id').values() # Para ordenar por más de un campo, separe los nombres de los campos con una coma en el método order_by
 
     template = loader.get_template('template.html')
     context = {
