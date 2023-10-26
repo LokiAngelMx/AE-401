@@ -77,15 +77,14 @@ WSGI_APPLICATION = "my_tennis_club.wsgi.application"
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'postgres',
-        'USER': 'Loki',
-        'PASSWORD': 'D06defebrerodel203',
-        'HOST': 'lokidatabase.ctenakabgjl1.us-east-2.rds.amazonaws.com',
-        'PORT': '5432'
+        'USER': 'postgres',
+        'PASSWORD': '12345678',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
