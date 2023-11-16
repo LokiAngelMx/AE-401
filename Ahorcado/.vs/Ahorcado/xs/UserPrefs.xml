@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{6D052C6B-F6D9-4A91-B836-682E0406C9A2}|Default">
+  <MonoDevelop.Ide.ItemProperties.Ahorcado PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Ahorcado/MainPage.xaml">
+    <Files>
+      <File FileName="Ahorcado/MainPage.xaml" Line="21" Column="38" />
+      <File FileName="Ahorcado/MainPage.xaml.cs" Line="195" Column="34" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Ahorcado" expanded="True">
+            <Node name="Ahorcado">
+              <Node name="MainPage.xaml" expanded="True" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
