@@ -1,0 +1,11 @@
+{% extends "blog/base.html" %}
+{% block title %}
+{{ post.title }}
+{% endblock %}
+
+{% block content %}
+{{ post.title }}
+Published {{ post.publish }} by {{ post.author }}
+
+{{ post.body|linebreaks }}
+{% endblock %}
